@@ -257,7 +257,7 @@ const ProfilePage = () => {
     formData.append("userId", userId);
 
     try {
-      const response = await fetch(`https://borasocialapp2024-backend.onrender.com/${id}/profilePicture`, {
+      const response = await fetch(`https://borasocialapp2024-backend.onrender.com${id}/profilePicture`, {
         method: "PUT",
         body: formData,
       });
