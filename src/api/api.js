@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: "https://borasocialapp2024-backend.onrender.com/api",
 });
 
 // Add a token to the Authorization header for secured requests
