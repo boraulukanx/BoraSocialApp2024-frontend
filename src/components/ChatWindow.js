@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { fetchMessages, sendMessage } from "../api/api";
 import io from "socket.io-client";
 
-const socket = io("http://localhost:5000"); // Replace with your server's address
+const socket = io("https://borasocialapp2024-backend.onrender.com"); // Replace with your server's address
 
 const ChatWindow = ({ eventId, userId }) => {
   const [messages, setMessages] = useState([]);
