@@ -1,0 +1,115 @@
+.create-event-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #121212;
+  color: #e0e0e0;
+  max-width: 800px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.create-event-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create-event-header h1 {
+  color: #f9a825;
+  font-size: 2rem;
+}
+
+.create-event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.create-event-form label {
+  font-weight: bold;
+  color: #cfcfcf;
+}
+
+.create-event-form input,
+.create-event-form select,
+.create-event-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-event-form input:focus,
+.create-event-form select:focus,
+.create-event-form textarea:focus {
+  outline: none;
+  border-color: #f9a825;
+  box-shadow: 0 0 6px rgba(249, 168, 37, 0.5);
+}
+
+.create-event-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-event-row-half {
+  flex: 1;
+}
+
+.create-event-map-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.create-event-map-container {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.create-event-button {
+  background-color: #f9a825;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-event-button:hover {
+  background-color: #ffd54f;
+  transform: translateY(-2px);
+}
+
+.create-event-error {
+  color: #ff5252;
+  background-color: #2a1a1a;
+  border: 1px solid #ff5252;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.create-event-map-info {
+  color: #90caf9;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 10px;
+}

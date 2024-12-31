@@ -1,0 +1,285 @@
+/* General Page Styling */
+.profile-page {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 20px;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  margin-left: 30px;
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  box-sizing: border-box;
+}
+
+.profile-page h1 {
+  font-size: 28px;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 10px;
+}
+
+/* Top Sections */
+.top-sections {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Profile Section */
+.profile-section {
+  flex: 1;
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #ffcc00;
+}
+
+/* Events Created Section */
+.events-created-section {
+  flex: 1;
+  background: #1e1e1e; /* Slightly lighter than main background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6); /* Softer shadow for depth */
+  max-height: 430px;
+  overflow-y: auto;
+}
+
+.events-created-section h2 {
+  font-size: 24px;
+  color: #f9a825; /* Bright golden for headings */
+  margin-bottom: 15px;
+  border-bottom: 3px solid #f9a825; /* Thicker border */
+  padding-bottom: 8px;
+  text-transform: uppercase; /* Style header text */
+}
+
+.events-created-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.events-created-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #252525; /* Card-like background */
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px; /* Rounded corners for individual items */
+  transition: background 0.3s, transform 0.2s;
+}
+
+.events-created-item:hover {
+  background: #353535; /* Highlighted background on hover */
+  transform: scale(1.02); /* Slight zoom effect */
+  cursor: pointer;
+}
+
+.events-created-item .event-title {
+  font-size: 18px;
+  color: #e0e0e0; /* Light text */
+}
+
+.events-created-item p {
+  font-size: 14px;
+  color: #a0a0a0; /* Subtle text color for details */
+  margin: 5px 0;
+}
+
+.events-created-item img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover; /* Ensures image fills the area */
+  border: 2px solid #f9a825;
+}
+
+.events-created-item .event-info {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Event History Section */
+.event-section {
+  background: #1e1e1e; /* Slightly lighter than main background */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for smooth look */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6); /* Softer shadow for depth */
+  max-height: 500px; /* Limit height for scrollable content */
+  overflow-y: auto; /* Enable scrolling for large lists */
+}
+
+.event-section h2 {
+  font-size: 24px;
+  color: #f9a825; /* Bright golden for headings */
+  margin-bottom: 15px;
+  border-bottom: 3px solid #f9a825; /* Bold separator line */
+  padding-bottom: 8px;
+  text-transform: uppercase; /* Add emphasis to section title */
+}
+
+.event-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #252525; /* Card-like background for items */
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px; /* Rounded corners for individual items */
+  transition: background 0.3s, transform 0.2s;
+}
+
+.event-item:hover {
+  background: #353535; /* Slightly lighter on hover */
+  transform: scale(1.02); /* Subtle zoom effect */
+  cursor: pointer;
+}
+
+.event-item img.event-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Circular icons for uniformity */
+  margin-right: 15px;
+  object-fit: cover; /* Ensure image fills its area */
+  border: 2px solid #f9a825; /* Highlight around the image */
+}
+
+.event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Space between details */
+}
+
+.event-details .event-title {
+  font-size: 18px;
+  color: #e0e0e0; /* Light text for contrast */
+  font-weight: bold;
+}
+
+.event-details p {
+  font-size: 14px;
+  color: #a0a0a0; /* Subtle color for additional info */
+  margin: 0;
+}
+
+.p-followers {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.p-followings {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.load-more {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background: #f9a825; /* Golden background for CTA */
+  color: #1f1f1f; /* Dark text for contrast */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.load-more:hover {
+  background: #ffd54f; /* Brighter on hover */
+  transform: scale(1.05); /* Slight lift effect */
+}
+
+.load-more:active {
+  transform: scale(1); /* Reset on click */
+}
+/* Follow and Unfollow Buttons */
+.follow-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1f1f1f;
+  background-color: #f9a825; /* Golden yellow for primary actions */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.follow-button:hover {
+  background-color: #ffd54f; /* Brighter shade on hover */
+  transform: scale(1.05); /* Slight lift effect */
+}
+
+.follow-button:active {
+  transform: scale(0.98); /* Subtle click effect */
+}
+
+.unfollow {
+  background-color: #ff5252; /* Red color for unfollow action */
+  color: #fff; /* White text for contrast */
+}
+
+.unfollow:hover {
+  background-color: #ff867c; /* Lighter red shade on hover */
+  transform: scale(1.05); /* Slight lift effect */
+}
+
+.unfollow:active {
+  transform: scale(0.98); /* Subtle click effect */
+}
+.update-picture-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #121212;
+  background-color: #ffcc00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.update-picture-button:hover {
+  background-color: #ffd54f; /* Brighter shade on hover */
+  transform: scale(1.05); /* Slight lift effect */
+}
+
+.update-picture-button:active {
+  transform: scale(0.98); /* Subtle click effect */
+}
+
+.update-picture-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px 2px rgba(255, 204, 0, 0.8); /* Highlight on focus */
+}

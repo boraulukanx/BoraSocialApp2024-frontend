@@ -1,0 +1,66 @@
+.followings-page {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffcc00;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ffcc00;
+  padding-bottom: 5px;
+}
+
+.followings-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.follow-item {
+  margin-bottom: 15px;
+}
+
+.follow-item-content {
+  display: flex;
+  align-items: center;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.follow-item-content:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.follow-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 2px solid #ffcc00;
+}
+
+.follow-username {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e0e0e0;
+  transition: color 0.3s ease;
+}
+
+.follow-username:hover {
+  color: #ffd966;
+}
+
+.no-followings {
+  font-size: 18px;
+  color: #ccc;
+  text-align: center;
+}
